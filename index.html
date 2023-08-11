@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid bg-dark min-vh-100 px-0">
+        
+        <nav class="navbar navbar-expand-lg pt-4">
+            <div class="container-fluid">
+              <a class="left-sec navbar-brand text-white ms-5  d-flex align-items-center" href="#">
+                <div>
+                    <img src="./imgs/logo.png" class="w-75" alt="">
+                </div>
+                <div>
+                    <h5>weather</h5>
+                    <h6>tagline goes here</h6>
+                </div>
+              </a>
+              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pe-5">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white me-4 border-2" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white me-4 border-2" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white me-4 border-2" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white me-4 border-2" >Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white me-5" >Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <header class="mt-5 py-5">
+            <form class="find-location position-relative mt-5">
+                <input onkeyup="getweather(this.value)"  type="text" class="input-search form-control mx-auto rounded-pill py-3" placeholder="Find your location ...">
+                <input type="button" value="Find" id="submit"  class="find-button btn btn-info text-light py-2 px-4 rounded-pill">
+            </form>
+          </header>
+          <div class="container whole-wether-shown row g-0 mx-auto pb-5">
+            <div class="wether-shown first-day col-md-4">
+              <div class="card bg-secondary text-white">
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item d-flex justify-content-between bg-dark text-white">
+                    <span class="day">Monday</span>
+                    <div class="date-1"><span class="date"> 7 Aug</span></div>
+                  </li>
+                </ul>
+                <div class="card-body">
+                  <div class="city-1 mb-2"><h6 class="city card-subtitle my-2 fs-2">Cairo</h6></div>
+                  <div class="data mb-2">
+                    <div class="degree d-flex align-items-center justify-content-between">
+                      <div class="degree-1"><h1 class="degree-number">27°C</h1></div>
+                      <div class="icon-1"><img src="./imgs/logo.png" class="w-100" alt="weather logo"></div>
+                    </div>
+                    <div class="coditionText-1"><div class="clowds text-primary mt-3 mb-2">Clear</div></div>
+                    <div class="d-flex mb-1">
+                      <span class="d-flex align-content-center">
+                        <i class="fa-solid fa-umbrella me-1"></i>
+                        <div class="humadity-1"><p>20%</p></div>
+                      </span>
+                      <span class="d-flex align-content-center mx-4">
+                        <i class="fa-solid fa-wind me-1"></i>
+                        <div class="wind-1"><p>18km/h</p></div>
+                      </span>
+                      <span class="d-flex align-content-center">
+                        <i class="fa-solid fa-compass me-1"></i>
+                        <div class="windDir-1"><p>East</p></div>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="wether-shown second-day col-md-4">
+              <div class="card bg-secondary text-white">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-white text-center">
+                    <div class="date-2"><span class="day">Tuesday</span></div>
+                  </li>
+                </ul>
+                <div class="card-body">
+                  <div class="data text-center my-4">
+                    <div class="icon-2 my-4 w-25 mx-auto"><img src="./imgs/logo.png" class="w-100" alt="weather logo"></div>
+                    <div class="degree-2-max mb-md-4"><h4>27°C</h4></div>
+                    <div class="degree-2-min"><h6>27°C</h6></div>
+                    <div class="clouds-2 text-warning my-4"><div>Clear</div></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="wether-shown third-day col-md-4">
+              <div class="card bg-secondary text-white">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-white text-center">
+                    <div class="date-3"><span class="day">Tuesday</span></div>
+                  </li>
+                </ul>
+                <div class="card-body">
+                  <div class="data text-center my-4">
+                    <div class="icon-3 my-4 w-25 mx-auto"><img src="./imgs/logo.png" class="w-100" alt="weather logo"></div>
+                    <div class="degree-3-max mb-md-4"><h4>27°C</h4></div>
+                    <div class="degree-3-min"><h6>27°C</h6></div>
+                    <div class="clouds-3 text-warning my-4"><div>Clear</div></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+    </div>
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/signup.js"></script>
+</body>
+
+</html>

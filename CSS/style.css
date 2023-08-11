@@ -1,0 +1,46 @@
+.left-sec{
+    width: 15%;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    border-radius:  50%;
+    border-style:solid;
+    border-color: rgb(57, 140, 208);
+    color: rgb(57, 140, 208) !important;
+}
+header{
+    background-image: url(../imgs/banner.png);
+    min-height: 35vh;
+}
+
+
+.form-control,.form-control:focus {
+    display: block;
+    width: 75%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f1f1f1;
+    background-color:rgba(30, 29, 29, 0.767);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid ;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.find-button{
+    position:absolute;
+    top: 15%;
+    right:13%;
+}
+.degree-number{
+    font-size: 70px;
+}
+/* .whole-wether-shown{
+    position: absolute;
+    top:50%;
+    left:7%;
+} */
