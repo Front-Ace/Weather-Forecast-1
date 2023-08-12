@@ -2,7 +2,7 @@ var allWeather = [];
 
 function getweather(term) {
     var weather = new XMLHttpRequest();
-weather.open("get" , `http://api.weatherapi.com/v1/forecast.json?key=fe50df14e109450f9b6202445230808&q=${term}&days=3`);
+weather.open("get" , `https://api.weatherapi.com/v1/forecast.json?key=fe50df14e109450f9b6202445230808&q=${term}&days=3`);
 weather.send();
 weather.addEventListener("loadend" , function () {
     if (weather.status == 200) {
