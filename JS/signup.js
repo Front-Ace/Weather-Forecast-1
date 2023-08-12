@@ -28,7 +28,7 @@ function displayFirstDay() {
     document.querySelector(".date-1-name").innerHTML = `<span class="day">${firstDay}</span>`
     document.querySelector(".date-1").innerHTML = `<span class="date mb-1">${day1} ${month1}</span>`;
     document.querySelector(".city-1").innerHTML = `<h6 class="city card-subtitle mt-1 mb-1 fs-2">${allWeather.location.name}</h6>`;
-    document.querySelector(".degree-1").innerHTML = `<h1 class="degree-number mb-2">${allWeather.forecast.forecastday[0].day.avgtemp_c}°C</h1>`;
+    document.querySelector(".degree-1").innerHTML = `<h1 class="degree-number mb-4">${allWeather.forecast.forecastday[0].day.avgtemp_c}°C</h1>`;
     document.querySelector(".icon-1").innerHTML = `<img src="https://${allWeather.forecast.forecastday[0].day.condition.icon}" class="w-100" alt="weather logo">`;
     document.querySelector(".coditionText-1").innerHTML = `<div class="clowds text-warning mt-3 mb-1">${allWeather.forecast.forecastday[0].day.condition.text}</div>`;
     document.querySelector(".humadity-1").innerHTML = `<p>${allWeather.forecast.forecastday[0].day.avghumidity}%</p>`;
