@@ -51,7 +51,7 @@
           <header class="mt-5 py-5">
             <form class="find-location position-relative mt-5">
                 <input onkeyup="getweather(this.value)"  type="text" class="input-search form-control mx-auto rounded-pill py-3" placeholder="Find your location ...">
-                <input type="button" value="Find" id="submit"  class="find-button btn btn-info text-light py-2 px-4 rounded-pill">
+                <input type="button" value="Find" id="submit" disabled  class="find-button btn btn-info text-light py-2 px-4 rounded-pill">
             </form>
           </header>
           <div class="container whole-wether-shown row g-0 mx-auto pb-5">
@@ -59,13 +59,13 @@
               <div class="card bg-secondary text-white">
                 <ul class="list-group list-group-flush ">
                   <li class="list-group-item d-flex justify-content-between bg-dark text-white">
-                    <span class="day">Monday</span>
+                    <div class="date-1-name"><span class="day">Monday</span></div>
                     <div class="date-1"><span class="date"> 7 Aug</span></div>
                   </li>
                 </ul>
                 <div class="card-body">
-                  <div class="city-1 mb-2"><h6 class="city card-subtitle my-2 fs-2">Cairo</h6></div>
-                  <div class="data mb-2">
+                  <div class="city-1"><h6 class="city card-subtitle mt-1 mb-2 fs-2">Cairo</h6></div>
+                  <div class="data mb-md-1">
                     <div class="degree d-flex align-items-center justify-content-between">
                       <div class="degree-1"><h1 class="degree-number">27°C</h1></div>
                       <div class="icon-1"><img src="./imgs/logo.png" class="w-100" alt="weather logo"></div>
