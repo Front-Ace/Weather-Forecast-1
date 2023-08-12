@@ -26,7 +26,7 @@ function displayFirstDay() {
     let month1= months[month];
     let firstDay = weekDays[day1];
     document.querySelector(".date-1-name").innerHTML = `<span class="day">${firstDay}</span>`
-    document.querySelector(".date-1").innerHTML = `<span class="date mb-1">${day1} ${month1}</span>`;
+    document.querySelector(".date-1").innerHTML = `<span class="date mb-1">${myDate1.getDate()} ${month1}</span>`;
     document.querySelector(".city-1").innerHTML = `<h6 class="city card-subtitle mt-1 mb-1 fs-2">${allWeather.location.name}</h6>`;
     document.querySelector(".degree-1").innerHTML = `<h1 class="degree-number mb-4">${allWeather.forecast.forecastday[0].day.avgtemp_c}°C</h1>`;
     document.querySelector(".icon-1").innerHTML = `<img src="https://${allWeather.forecast.forecastday[0].day.condition.icon}" class="w-100" alt="weather logo">`;
